@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+/* variables for success and error scenarios */
+:root {
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
+}
+
+/* Box Sizing to avoid change in width when padding changes */
+* {
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;  
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.top{
+    margin-top: 6%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.form {
+    padding: 15px 25px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+.form-control select {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+.form-control input:focus {
+    outline : 0;    /* To remove the blue border in input textbox */
+    border-color: #777;
+}
+
+
+.form-control select:focus {
+    outline : 0;    /* To remove the blue border in input textbox */
+    border-color: #777;
+}
+
+/* No space between .form-control and .success class */
+.form-control.success input {           
+    outline : 0;
+    border-color: var(--success-color);  /* success color : green */
+}
+
+.form-control.success select {           
+    outline : 0;
+    border-color: var(--success-color);  /* success color : green */
+}
+
+.form-control.error input {
+    outline : 0;
+    border-color: var(--error-color);   /* error color : red */
+}
+
+.form-control.error select {
+    outline : 0;
+    border-color: var(--error-color);   /* error color : red */
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility : visible;
+}
+
+.form-control.success small {
+    visibility : hidden;
+}
+
+.form button {
+    cursor : pointer;
+    background-color: #19aa8d;
+    border: 2px solid #19aa8d;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+a {
+    color: #19aa8d;
+    text-decoration: none;    
+}
+
+
+.part {
+    display: inline-block;
+    justify-content:center;
+    /* margin-right: 15px; */
+}
+
+.part2 {
+    display: inline-block;
+    justify-content:center;
+}

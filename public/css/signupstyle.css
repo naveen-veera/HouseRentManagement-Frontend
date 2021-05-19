@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+/* variables for success and error scenarios */
+:root {
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
+}
+
+/* Box Sizing to avoid change in width when padding changes */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow : 0 2px 10px rgba(0,0,0,0.3);
+    width:400px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+.form-control select {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+.form-control input:focus {
+    outline : 0;    /* To remove the blue border in input textbox */
+    border-color: #777;
+}
+
+
+.form-control select:focus {
+    outline : 0;    /* To remove the blue border in input textbox */
+    border-color: #777;
+}
+
+/* No space between .form-control and .success class */
+.form-control.success input {           
+    outline : 0;
+    border-color: var(--success-color);  /* success color : green */
+}
+
+.form-control.success select {           
+    outline : 0;
+    border-color: var(--success-color);  /* success color : green */
+}
+
+.form-control.error input {
+    outline : 0;
+    border-color: var(--error-color);   /* error color : red */
+}
+
+.form-control.error select {
+    outline : 0;
+    border-color: var(--error-color);   /* error color : red */
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility : visible;
+}
+
+.form-control.success small {
+    visibility : hidden;
+}
+
+.form button {
+    cursor : pointer;
+    background-color: #19aa8d;
+    border: 2px solid #19aa8d;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+a {
+    color: #19aa8d;
+    text-decoration: none;    
+}
+
+
+/* .container {
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center; 
+} */

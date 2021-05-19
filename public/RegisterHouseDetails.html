@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register House Details</title>
+    <link href="../public/css/registerhousedetails.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" class="form" method="POST" action="">
+            <h2>Add House</h2>
+
+            <div class="form-control">
+                <label for="housename">House Name</label>
+                <input type="text" name="housename" id="housename" placeholder="Enter House Name" autocomplete="off"
+                    onfocus="this.value=''">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" placeholder="Enter House Description"
+                    autocomplete="off" onfocus="this.value=''">
+                <small>Error Message</small>
+            </div>
+
+            <div class="row">
+                <div class="form-control part2 col-10">
+                    <label for="registrationnumber">Registration Number</label>
+                    <input type="text" name="registrationnumber" id="registrationnumber" autocomplete="off"
+                        onfocus="this.value=''">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control part2">
+                    <label for="houseavailable">House Available</label>
+                    <select name="houseavailable" id="houseavailable">
+                        <option value="yes" selected>Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="imageurl">Image URL</label>
+                <input type="text" name="imageurl" id="imageurl" placeholder="Enter Image URL" autocomplete="off"
+                    onfocus="this.value=''">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="locationdescription">Location Description</label>
+                <input type="text" name="locationdescription" id="locationdescription"
+                    placeholder="Enter Location Description" autocomplete="off" onfocus="this.value=''">
+                <small>Error Message</small>
+            </div>
+
+            <div class="row">
+                <div class="form-control part col-4">
+                    <label for="houserent">House Rent</label>
+                    <input type="text" name="houserent" id="houserent" placeholder="Enter House Rent" autocomplete="off"
+                        onfocus="this.value=''">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control part col-3ex">
+                    <label for="housetype">House Type</label>
+                    <input type="text" name="housetype" id="housetype" placeholder="Enter House Type" autocomplete="off"
+                        onfocus="this.value=''">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control part col-4">
+                    <label for="furnishedstatus">Furnished Status</label>
+                    <input type="text" name="furnishedstatus" id="furnishedstatus" placeholder="Enter Furnished Status"
+                        autocomplete="off" onfocus="this.value=''">
+                    <small>Error Message</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address"
+                    placeholder="Enter DoorNo, Area, Street, District, State, Pincode" autocomplete="off"
+                    onfocus="this.value=''">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" id="submit">Add</button>
+            </div>
+        </form>
+    </div>
+    <script src="./../public/js/registerhousescript.js"></script>
+</body>
+
+</html>

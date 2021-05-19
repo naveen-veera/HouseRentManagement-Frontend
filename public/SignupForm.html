@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="../public/css/signupstyle.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div class="container">
+        <form id="profileform" class="form" method="POST" action="/">
+            <h2>Signup</h2>
+
+            <div class="form-control">
+                <input type="text" name="username" id="username" autocomplete="off" placeholder="Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="number" name="mobilenumber" id="mobilenumber" autocomplete="off"
+                    placeholder="Mobile Number">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <select name="gender" id="gender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="text" name="occupation" id="occupation" autocomplete="off" placeholder="Occupation">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="text" name="email" id="email" autocomplete="off" placeholder="Email Address">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" name="password" id="password" autocomplete="off" placeholder="Password">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" name="password2" id="password2" autocomplete="off"
+                    placeholder="Confirm Password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <select name="userrole" id="userrole">
+                    <option value="buyer" selected>Buyer</option>
+                    <option value="seller">Seller</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="text" name="address" id="useraddress" autocomplete="off" placeholder="Address">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <button type="submit" id="submit">Sign Up</button>
+            </div>
+            <div class="form-control">
+                <label style="text-align:center">Already have an Account? <a href="./LoginForm.html">Login
+                        here</a></label>
+            </div>
+        </form>
+    </div>
+
+    <script src="./../public/js/signupscript.js"></script>
+</body>
+
+</html>
